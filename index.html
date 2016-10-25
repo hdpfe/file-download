@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>fileDownload - Demos</title>
+    <meta charset="utf-8">
+    <style>
+    body{
+        font-family: 'microsoft yahei';
+
+    }
+    .create{
+        padding:10px;
+        border:1px solid #ddd;
+        border-radius: 3px;
+        text-align: center;
+        width:800px;
+        margin:30px auto;
+    }
+    .btn{
+        display: inline-block;
+        background-color: #009a61;
+        color:#fff;
+        width: 100px;
+        height:30px;
+        line-height: 30px;
+        text-decoration: none;
+        text-align: center;
+        border:1px solid #008151;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+    form div{
+        margin:10px auto;
+    }
+    form label{
+        font-size: 12px;
+    }
+    form input{
+        height:25px;
+        line-height: 25px;
+        padding-left: 3px;
+    }
+    .create>div{
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="create">
+        <h3>导出CSV文件</h3>
+        <form action="">
+            <div>
+                <label for="name" >姓名：</label>
+                <input type="text" name="text" class="csv" value="dodo"/>
+            </div>
+            <div>
+                <label for="sex">性别：</label>
+                <input type="text" name="sex" class="csv" value="gril"/>
+            </div>
+
+            <div>
+                <label for="school">学校：</label>
+                <input type="text" name="school" class="csv" value="zhongda"/>
+            </div>
+
+            <div>
+                <label for="address">住址：</label>
+                <input type="text" name="address" class="csv" value="address"/>
+            </div>
+
+        </form>
+        <a href="javascript:;" class="btn" onclick="outputCSV()">导出CSV文件</a>
+    </div>
+    <div class="create">
+        <h3>导出图片</h3>
+        <div>
+            <img src="http://image.zhangxinxu.com/image/study/p/s200/ps2.jpg" alt="test createImage">
+        </div>
+
+        <a href="javascript:;" class="btn" onclick="outputImg()">导出图片</a>
+    </div>
+    <div class="create">
+        <h3>导出文本文件</h3>
+        <form action="">
+            <textarea name="name" rows="8" cols="60"  id="getTxt">
+                dodo超级无敌帅dodo超级无敌帅dodo超级无敌帅
+                dodo超级无敌帅dodo超级无敌帅dodo超级无敌帅
+                dodo超级无敌帅dodo超级无敌帅dodo超级无敌帅
+            </textarea>
+            <!-- <label for="name">姓名：</label>
+            <input type="text" name="text"/>
+            <label for="sex">性别：</label>
+            <input type="text" name="sex"/>
+            <label for="school">学校：</label>
+            <input type="text" name="school"/>
+            <label for="address">住址：</label>
+            <input type="text" name="address"/> -->
+        </form>
+
+        <a href="javascript:;" class="btn" onclick="outputTXT()">导出文本文件</a>
+    </div>
+    <script src="./dist/file-download.js"></script>
+    <script src="./demo/demo.js"></script>
+</body>
+</html>

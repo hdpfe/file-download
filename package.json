@@ -1,0 +1,22 @@
+{
+    "name": "file-download",
+    "version": "1.0.0",
+    "description": "download txt file,csv file and images",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack p"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hdpfe/file-download.git"
+    },
+    "author": "loviselu",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hdpfe/file-download/issues"
+    },
+    "homepage": "https://github.com/hdpfe/file-download#readme",
+    "devDependencies": {
+        "webpack": "^1.13.2"
+    }
+}
