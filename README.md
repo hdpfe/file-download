@@ -40,9 +40,9 @@ npm install file-download
 
     /* 保存txt文件到本地
     /  @paramas
-    /  data:            要保存的text文件名字,格式必须为数组，必须。格式：stirng
-    /  title:           下载到本地的图片的名称，可选。格式：string
+    /  content:         要保存的文件内容，必须。格式：stirng
+    /  title:           下载到本地的文件名称，可选。格式：string
     */
-    fileDownload.createTXT(dataArr,title);
+    fileDownload.createTXT(content,title);
 
 ```
